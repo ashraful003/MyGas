@@ -12,4 +12,9 @@
     <color name="red_500">#FFFF5949</color>
     <color name="white_shado">#404040</color>
     <color name="slidePage">#FADFDC</color>
+    <color name="hint_text_color">#82888A</color>
+    <color name="background">#F7F9FC</color>
+    <color name="page_title_text_color">#222B45</color>
+    <color name="red_500_shadow">#FFCDC8</color>
+
 </resources>
