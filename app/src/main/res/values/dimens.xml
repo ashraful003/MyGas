@@ -17,6 +17,10 @@
     <dimen name="margin_20">20dp</dimen>
     <dimen name="button_top_margin">35dp</dimen>
     <dimen name="button_bottom_margin">20dp</dimen>
+    <dimen name="margin_122">122dp</dimen>
+    <dimen name="margin_41">41dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
 
     // radius
     <dimen name="card_radius_20">20dp</dimen>
@@ -32,6 +36,8 @@
     <dimen name="text_size_17">17sp</dimen>
     <dimen name="title_text_size">26sp</dimen>
     <dimen name="text_size">15sp</dimen>
+    <dimen name="text_size_29">29dp</dimen>
+    <dimen name="text_size_11">11dp</dimen>
 
     //padding
     <dimen name="padding_bottom_74">74dp</dimen>
