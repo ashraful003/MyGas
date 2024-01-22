@@ -26,4 +26,6 @@
     <string name="sign_in">Sign In</string>
     <string name="sign_in_with_facebook">Sign In with Facebook</string>
     <string name="you_don_t_have_an_account">You don’t have an account?</string>
+    <string name="recover">Please enter your Email so we can help you recover your password.</string>
+    <string name="next">Next</string>
 </resources>
