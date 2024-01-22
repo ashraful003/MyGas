@@ -73,5 +73,8 @@
         <action
             android:id="@+id/action_loginChangePassFragment_to_loginVerifyPassFragment"
             app:destination="@id/loginVerifyPassFragment" />
+        <action
+            android:id="@+id/action_loginChangePassFragment_to_loginInputFragment"
+            app:destination="@id/loginInputFragment" />
     </fragment>
 </navigation>
