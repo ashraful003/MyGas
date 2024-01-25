@@ -11,26 +11,39 @@ import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentLoginLandingBinding
+import com.gas.mygasbd.util.MGActivityUtil
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class LoginLandingFragment : Fragment() {
-   val actionLogin = Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginInputFragment)
-    val actionSignUp = Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginCreateFragment)
+    @Inject
+    lateinit var activityUtil: MGActivityUtil
+    val actionLogin =
+        Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginInputFragment)
+    val actionSignUp =
+        Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginCreateFragment)
     private lateinit var binding: FragmentLoginLandingBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login_landing, container, false)
+        binding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_login_landing, container, false)
         binding.model = this
-        val pageOneView = LayoutInflater.from(activity).inflate(R.layout.login_slider_page_one,null)
-        val pageTwoView = LayoutInflater.from(activity).inflate(R.layout.login_slider_page_two,null)
-        val pageThreeView = LayoutInflater.from(activity).inflate(R.layout.login_slider_page_three,null)
-        val views = listOf(pageOneView,pageTwoView,pageThreeView)
+        activityUtil.hideBottomNavigation(true)
+        val pageOneView =
+            LayoutInflater.from(activity).inflate(R.layout.login_slider_page_one, null)
+        val pageTwoView =
+            LayoutInflater.from(activity).inflate(R.layout.login_slider_page_two, null)
+        val pageThreeView =
+            LayoutInflater.from(activity).inflate(R.layout.login_slider_page_three, null)
+        val views = listOf(pageOneView, pageTwoView, pageThreeView)
         val adapter = ViewPageAdapter(views)
 
         binding.sliderViewPager.adapter = adapter
         binding.sliderViewPager.registerOnPageChangeCallback(object :
-        ViewPager2.OnPageChangeCallback(){
+            ViewPager2.OnPageChangeCallback() {
             override fun onPageScrolled(
                 position: Int,
                 positionOffset: Float,
@@ -52,24 +65,71 @@ class LoginLandingFragment : Fragment() {
 
         return binding.root
     }
-    private fun changeColor(){
+
+    private fun changeColor() {
         val context = requireContext()
-        when(binding.sliderViewPager.currentItem){
-            0->{
-                binding.dotOneIv.setBackgroundColor(ContextCompat.getColor(context,R.color.red_500))
-                binding.dotTwoIv.setBackgroundColor(ContextCompat.getColor(context,R.color.slidePage))
-                binding.dotThreeIv.setBackgroundColor(ContextCompat.getColor(context,R.color.slidePage))
+        when (binding.sliderViewPager.currentItem) {
+            0 -> {
+                binding.dotOneIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.red_500
+                    )
+                )
+                binding.dotTwoIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.slidePage
+                    )
+                )
+                binding.dotThreeIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.slidePage
+                    )
+                )
             }
 
-            1->{
-                binding.dotOneIv.setBackgroundColor(ContextCompat.getColor(context,R.color.slidePage))
-                binding.dotTwoIv.setBackgroundColor(ContextCompat.getColor(context,R.color.red_500))
-                binding.dotThreeIv.setBackgroundColor(ContextCompat.getColor(context,R.color.slidePage))
+            1 -> {
+                binding.dotOneIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.slidePage
+                    )
+                )
+                binding.dotTwoIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.red_500
+                    )
+                )
+                binding.dotThreeIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.slidePage
+                    )
+                )
             }
-            2->{
-                binding.dotOneIv.setBackgroundColor(ContextCompat.getColor(context,R.color.slidePage))
-                binding.dotTwoIv.setBackgroundColor(ContextCompat.getColor(context,R.color.slidePage))
-                binding.dotThreeIv.setBackgroundColor(ContextCompat.getColor(context,R.color.red_500))
+
+            2 -> {
+                binding.dotOneIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.slidePage
+                    )
+                )
+                binding.dotTwoIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.slidePage
+                    )
+                )
+                binding.dotThreeIv.setBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.red_500
+                    )
+                )
             }
         }
     }

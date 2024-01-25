@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.mygas"
-        minSdk 24
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -56,7 +56,9 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.7.5")
-
+    //login Viewpager
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("androidx.cardview:cardview:1.0.0")
     //RxView
     implementation "io.reactivex.rxjava2:rxjava:2.2.19"
     implementation "com.jakewharton.rxbinding2:rxbinding:2.0.0"
