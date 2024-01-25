@@ -17,4 +17,5 @@
     <color name="hint_text_color">#82888A</color>
     <color name="red_500_shadow">#FFCDC8</color>
     <color name="signIn_btn_color">#0095FF</color>
+    <color name="gray">#82888A</color>
 </resources>

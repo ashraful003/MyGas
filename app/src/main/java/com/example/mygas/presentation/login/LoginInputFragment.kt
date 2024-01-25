@@ -2,6 +2,7 @@ package com.example.mygas.presentation.login
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.os.Handler
 import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,10 +14,21 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentLoginInputBinding
+import com.example.mygas.presentation.MainActivity
+import com.gas.mygasbd.util.MGActivityUtil
+import com.gas.mygasbd.util.SharePreferencesUtil
 import com.jakewharton.rxbinding2.widget.RxTextView
+import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.Observable
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class LoginInputFragment : Fragment() {
+    @Inject
+    lateinit var activityUtil: MGActivityUtil
+
+    @Inject
+    lateinit var sharedPrefs: SharePreferencesUtil
     private lateinit var viewModel: LoginViewModel
     private lateinit var binding: FragmentLoginInputBinding
     val actionForgot =
@@ -57,6 +69,17 @@ class LoginInputFragment : Fragment() {
         }
 
         binding.loginErrorTv.visibility = View.GONE
+
+        binding.btnSignIn.setOnClickListener {
+
+            activityUtil.setFullScreenLoading(true)
+            Handler().postDelayed({
+                sharedPrefs.setAuthToken("Ashraful")
+                activity?.let {
+                    startActivity(MainActivity.getLaunchIntent(it))
+                }
+            }, 3000)
+        }
         return binding.root
     }
 
