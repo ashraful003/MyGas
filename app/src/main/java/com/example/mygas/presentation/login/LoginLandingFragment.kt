@@ -11,7 +11,7 @@ import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentLoginLandingBinding
-import com.gas.mygasbd.util.MGActivityUtil
+import com.example.mygas.util.MGActivityUtil
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

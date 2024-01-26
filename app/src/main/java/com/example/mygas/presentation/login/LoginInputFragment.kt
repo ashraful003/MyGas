@@ -15,8 +15,8 @@ import androidx.navigation.Navigation
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentLoginInputBinding
 import com.example.mygas.presentation.MainActivity
-import com.gas.mygasbd.util.MGActivityUtil
-import com.gas.mygasbd.util.SharePreferencesUtil
+import com.example.mygas.util.MGActivityUtil
+import com.example.mygas.util.SharePreferencesUtil
 import com.jakewharton.rxbinding2.widget.RxTextView
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.Observable

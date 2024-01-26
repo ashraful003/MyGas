@@ -1,4 +1,4 @@
-package com.gas.mygasbd.util
+package com.example.mygas.util
 
 interface ISharedPreferencesUtil {
     fun logout()

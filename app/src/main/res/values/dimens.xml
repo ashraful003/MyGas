@@ -29,16 +29,32 @@
     <dimen name="margin_92">92dp</dimen>
     <dimen name="margin_3">3dp</dimen>
     <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_103">103dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_170">170</dimen>
+    <dimen name="margin_220">220dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_top_12">12dp</dimen>
+    <dimen name="margin_left_13">13dp</dimen>
 
     // radius
     <dimen name="card_radius_20">20dp</dimen>
     <dimen name="radius_8">8dp</dimen>
+    <dimen name="corner_radius_10">10dp</dimen>
+    <dimen name="width_40">40dp</dimen>
+    <dimen name="height_40">40dp</dimen>
 
     // layout
     <dimen name="width_8">8dp</dimen>
     <dimen name="height_8">8dp</dimen>
     <dimen name="view_height_56">56dp</dimen>
     <dimen name="layout_size_60">60dp</dimen>
+    <dimen name="layout_size_68">68dp</dimen>
+    <dimen name="height_117">117dp</dimen>
 
     //text size
     <dimen name="text_size_30">30sp</dimen>
@@ -47,6 +63,7 @@
     <dimen name="text_size">15sp</dimen>
     <dimen name="text_size_29">29dp</dimen>
     <dimen name="text_size_11">11dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
 
     //padding
     <dimen name="padding_bottom_74">74dp</dimen>
@@ -60,6 +77,7 @@
     <dimen name="padding_11">11dp</dimen>
     <dimen name="padding_10">10dp</dimen>
     <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
 
     //viewpoerSize
     <dimen name="viwe_port_30">30</dimen>

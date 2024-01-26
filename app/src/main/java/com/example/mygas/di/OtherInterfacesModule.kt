@@ -1,7 +1,7 @@
-package com.gas.mygasbd.di
+package com.example.mygas.di
 
-import com.gas.mygasbd.util.ISharedPreferencesUtil
-import com.gas.mygasbd.util.SharePreferencesUtil
+import com.example.mygas.util.ISharedPreferencesUtil
+import com.example.mygas.util.SharePreferencesUtil
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -10,7 +10,6 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 interface OtherInterfacesModule {
-
     @Binds
     fun bindSharePreferencesUtil(sharePreferencesUtil: SharePreferencesUtil): ISharedPreferencesUtil
 }

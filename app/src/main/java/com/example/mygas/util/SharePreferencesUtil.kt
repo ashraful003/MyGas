@@ -1,4 +1,4 @@
-package com.gas.mygasbd.util
+package com.example.mygas.util
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext

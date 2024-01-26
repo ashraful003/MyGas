@@ -45,5 +45,15 @@
     <string name="menu_home_order_title">Order</string>
     <string name="menu_home_favorites_title">Favorites</string>
     <string name="menu_home_profile_title">Profile</string>
-    <string name="logout">Logout</string>
+    <string name="Icon_title_customers">Customers</string>
+    <string name="Icon_title_sales">Sales</string>
+    <string name="Icon_title_product">Product</string>
+    <string name="Icon_title_expense">Expense</string>
+    <string name="Icon_title_store">Store</string>
+    <string name="Icon_title_representative">Representative</string>
+    <string name="Icon_title_report">Report</string>
+    <string name="Icon_title_income">Income</string>
+    <string name="Icon_title_purchase_order">Purchase Order</string>
+    <string name="Icon_title_activity_log">Activity Log</string>
+
 </resources>
