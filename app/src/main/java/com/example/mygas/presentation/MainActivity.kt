@@ -12,8 +12,8 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.mygas.R
 import com.example.mygas.databinding.ActivityMainBinding
-import com.gas.mygasbd.util.MGActivityUtil
-import com.gas.mygasbd.util.SharePreferencesUtil
+import com.example.mygas.util.MGActivityUtil
+import com.example.mygas.util.SharePreferencesUtil
 import dagger.hilt.android.AndroidEntryPoint
 import java.lang.Exception
 import javax.inject.Inject
@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity(), MGActivityUtil.ActivityListener {
                 R.id.favorites -> {}
                 R.id.profile -> {}
             }
-
             true
         }
     }

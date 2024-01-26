@@ -1,8 +1,6 @@
-package com.gas.mygasbd.util
+package com.example.mygas.util
 
 class MGActivityUtil(private var activityListener: ActivityListener) {
-
-
     fun hideBottomNavigation(hide: Boolean) {
         activityListener.hideBottomNavigation(hide)
     }

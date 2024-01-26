@@ -6,34 +6,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentHomeBinding
 import com.example.mygas.presentation.MainActivity
 import com.example.mygas.presentation.login.LoginViewModel
-import com.gas.mygasbd.util.MGActivityUtil
-import com.gas.mygasbd.util.SharePreferencesUtil
+import com.example.mygas.util.MGActivityUtil
+import com.example.mygas.util.SharePreferencesUtil
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
-    @Inject
-    lateinit var sharedPrefs: SharePreferencesUtil
     private lateinit var binding: FragmentHomeBinding
-    private lateinit var activityUtil: MGActivityUtil
+    @Inject
+    lateinit var activityUtil: MGActivityUtil
+    private lateinit var viewModel: HomeViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         binding.model = this
-        binding.btnSignOut.setOnClickListener {
-            sharedPrefs.setAuthToken("")
-            activity?.let {
-                startActivity(MainActivity.getLaunchIntent(it))
-            }
-        }
-
+        activityUtil.hideBottomNavigation(false)
         return binding.root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
     }
 }
