@@ -78,6 +78,7 @@
     <dimen name="padding_10">10dp</dimen>
     <dimen name="padding_15">15dp</dimen>
     <dimen name="padding_20">20dp</dimen>
+    <dimen name="input_fild_padding">14dp</dimen>
 
     //viewpoerSize
     <dimen name="viwe_port_30">30</dimen>

@@ -26,6 +26,7 @@
                 android:layout_height="@dimen/height_117"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:onClick="@{model.actionCustomer}"
                 android:layout_marginLeft="@dimen/margin_11"
                 android:layout_marginTop="@dimen/margin_top_12"
                 android:backgroundTint="@color/white"
