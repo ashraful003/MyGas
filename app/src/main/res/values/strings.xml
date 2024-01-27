@@ -64,4 +64,7 @@
     <string name="browse">Browse</string>
     <string name="choose_customer_image">Choose Customer Image</string>
     <string name="error_retail">retail can not be empty</string>
+    <string name="sales">Sales</string>
+    <string name="add_product">Add Product</string>
+    <string name="choose_customer">Choose Customer</string>
 </resources>
