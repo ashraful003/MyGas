@@ -60,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/height_117"
                 android:layout_rowWeight="1"
+                android:onClick="@{model.actionSales}"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="@dimen/margin_left_13"
                 android:layout_marginTop="@dimen/margin_top_12"

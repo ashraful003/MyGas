@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_customerFragment"
             app:destination="@id/customerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -40,5 +43,29 @@
         <action
             android:id="@+id/action_customerFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.example.mygas.presentation.dashboard.SalesFragment"
+        android:label="fragment_sales"
+        tools:layout="@layout/fragment_sales" >
+        <action
+            android:id="@+id/action_salesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_salesFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+        <action
+            android:id="@+id/action_salesFragment_to_salesChooseCustomerFragment"
+            app:destination="@id/salesChooseCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesChooseCustomerFragment"
+        android:name="com.example.mygas.presentation.dashboard.SalesChooseCustomerFragment"
+        android:label="fragment_sales_choose_customer"
+        tools:layout="@layout/fragment_sales_choose_customer" >
+        <action
+            android:id="@+id/action_salesChooseCustomerFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
     </fragment>
 </navigation>
