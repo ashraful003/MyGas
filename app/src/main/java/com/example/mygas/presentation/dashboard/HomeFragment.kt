@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentHomeBinding
 import com.example.mygas.presentation.MainActivity
@@ -22,6 +23,7 @@ class HomeFragment : Fragment() {
     @Inject
     lateinit var activityUtil: MGActivityUtil
     private lateinit var viewModel: HomeViewModel
+    val actionCustomer = Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_customerFragment)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

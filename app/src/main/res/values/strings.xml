@@ -55,5 +55,13 @@
     <string name="Icon_title_income">Income</string>
     <string name="Icon_title_purchase_order">Purchase Order</string>
     <string name="Icon_title_activity_log">Activity Log</string>
-
+    <string name="customers">Customers</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="mobile_contact_no">Mobile / Contact No</string>
+    <string name="retail_name">Retail Name</string>
+    <string name="address">Address</string>
+    <string name="save">Save</string>
+    <string name="browse">Browse</string>
+    <string name="choose_customer_image">Choose Customer Image</string>
+    <string name="error_retail">retail can not be empty</string>
 </resources>
