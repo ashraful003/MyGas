@@ -41,6 +41,7 @@
     <dimen name="margin_top_12">12dp</dimen>
     <dimen name="margin_left_13">13dp</dimen>
     <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_top_100">100dp</dimen>
 
     // radius
     <dimen name="card_radius_20">20dp</dimen>
