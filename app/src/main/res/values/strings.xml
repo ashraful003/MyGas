@@ -67,4 +67,10 @@
     <string name="sales">Sales</string>
     <string name="add_product">Add Product</string>
     <string name="choose_customer">Choose Customer</string>
+    <string name="product">Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_image">Product Image</string>
+    <string name="product_cost">Product Cost</string>
+    <string name="category_refill_package">Category (Refill / Package)</string>
+    <string name="quantity">Quantity</string>
 </resources>

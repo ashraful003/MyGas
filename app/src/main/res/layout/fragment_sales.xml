@@ -61,11 +61,9 @@
                     android:background="@drawable/rounded_editetext_bg"
                     android:textColorHint="@color/hint_text_color"
                     app:layout_constraintBottom_toTopOf="@+id/addProductContainer"
-                    android:onClick="@{model.actionSalesCustomer}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/titleTv">
-
                     <TextView
                         android:id="@+id/chooseCustomerTv"
                         android:layout_width="wrap_content"
@@ -98,6 +96,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_20"
+                    android:onClick="@{model.actionProduct}"
                     android:background="@drawable/rounded_editetext_bg"
                     android:textColorHint="@color/hint_text_color"
                     app:layout_constraintEnd_toEndOf="parent"

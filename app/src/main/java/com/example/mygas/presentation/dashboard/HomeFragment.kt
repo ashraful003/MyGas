@@ -25,6 +25,7 @@ class HomeFragment : Fragment() {
     private lateinit var viewModel: HomeViewModel
     val actionCustomer = Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_customerFragment)
     val actionSales = Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_salesFragment)
+    val actionProduct = Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_productFragment)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
