@@ -58,6 +58,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_40"
+                    android:onClick="@{model.actionSalesCustomer}"
                     android:background="@drawable/rounded_editetext_bg"
                     android:textColorHint="@color/hint_text_color"
                     app:layout_constraintBottom_toTopOf="@+id/addProductContainer"

@@ -18,6 +18,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class SalesFragment : Fragment() {
     val actionProduct = Navigation.createNavigateOnClickListener(R.id.action_salesFragment_to_productFragment)
+    val actionSalesCustomer = Navigation.createNavigateOnClickListener(R.id.action_salesFragment_to_salesChooseCustomerFragment)
     private lateinit var viewModel: SalesViewModel
     private lateinit var binding:FragmentSalesBinding
 
