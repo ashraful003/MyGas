@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_profileFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment2" />
     </fragment>
     <fragment
         android:id="@+id/customerFragment"
@@ -79,5 +82,13 @@
         <action
             android:id="@+id/action_productFragment_to_salesFragment2"
             app:destination="@id/salesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment2"
+        android:name="com.example.mygas.presentation.dashboard.UpdateProfileFragment"
+        android:label="UpdateProfileFragment" >
+        <action
+            android:id="@+id/action_updateProfileFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
 </navigation>

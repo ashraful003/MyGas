@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.example.mygas.R
 import com.example.mygas.databinding.FragmentProfileBinding
 import com.example.mygas.presentation.MainActivity
@@ -18,8 +19,11 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
+    val actionUpdateProfile = Navigation.createNavigateOnClickListener(R.id.action_profileFragment_to_updateProfileFragment)
     @Inject
     lateinit var sharedPrefs: SharePreferencesUtil
+    @Inject
+    lateinit var activityUtil:MGActivityUtil
     private lateinit var binding: FragmentProfileBinding
     private lateinit var viewModel: ProfileViewModel
 
@@ -29,6 +33,7 @@ class ProfileFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false)
         binding.model = this
+        activityUtil.hideBottomNavigation(false)
         binding.btnSignOut.setOnClickListener {
             logout(it)
         }
