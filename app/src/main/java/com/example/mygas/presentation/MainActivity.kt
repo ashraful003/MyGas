@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity(), MGActivityUtil.ActivityListener {
         navHostFragment =
             supportFragmentManager.findFragmentById(R.id.navHostFragmentContainer) as NavHostFragment
         with(navHostFragment) {
-            val infalter = findNavController().navInflater
+            val inflater = findNavController().navInflater
             if (authUser) {
-                findNavController().graph = (infalter.inflate(R.navigation.dashboard_navigation))
+                findNavController().graph = (inflater.inflate(R.navigation.dashboard_navigation))
             } else {
-                findNavController().graph = (infalter.inflate(R.navigation.login_navigation))
+                findNavController().graph = (inflater.inflate(R.navigation.login_navigation))
             }
         }
         navController = navHostFragment.navController
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), MGActivityUtil.ActivityListener {
                 R.id.nearBy -> {}
                 R.id.order -> {}
                 R.id.favorites -> {}
-                R.id.profile -> {}
+                R.id.profile -> {navHostFragment.findNavController().navigate(R.id.profileFragment)}
             }
             true
         }
